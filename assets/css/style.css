@@ -1,0 +1,45 @@
+body {
+       
+}
+
+.top {
+    width: 960px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    float: left;
+    clear: right;
+}
+
+.main {
+    width: 960px;
+    background:url(../images/topography.png);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+}
+
+nav {
+    float: right;
+    clear: right;
+}
+
+li {
+    float: left;
+    margin: 20px;
+}
+
+h2 {
+    clear: left;
+    width: 960px;
+    border-bottom: #4aaaa5;
+}
