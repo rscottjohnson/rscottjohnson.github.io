@@ -14,13 +14,13 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: sjwvuie
 
-description: Stylish Jekyll Theme
+description: Scott Johnson's Blog Site
 author:
-  name: dbyll
-  email: dbyll@ismaildemirbilek.com
-  github: dbtek
+  name: Scott Johnson
+  email: sjwvuie@gmail.com
+  github: https://github.com/rscottjohnson
   twitter: dbtek
   pinterest: asd123
   linkedin: asd123
