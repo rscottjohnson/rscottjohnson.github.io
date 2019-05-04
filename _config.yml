@@ -5,27 +5,27 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
-disqus: dbyll
-google_analytics: dbyll
-title: dbyll
+disqus: sjwvuie
+google_analytics: sjwvuie
+title: SJ | Dev
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: sjwvuie
+      title: welcome
 
 description: Scott Johnson's Blog Site
 author:
   name: Scott Johnson
-  email: sjwvuie@gmail.com
-  github: https://github.com/rscottjohnson
-  twitter: https://twitter.com/rscottjohnson
-  pinterest: asd123
-  linkedin: asd123
-  bio: Your stylish, minimalist theme!
-  email_md5: 726351295ec82e145928582f595aa3aa
+  email: sjohnson.wvu@gmail.com
+  github: rscottjohnson
+  twitter: rscottjohnson
+  pinterest: 
+  linkedin: rscottjohnson2
+  bio: Posts, notes, and thoughts -- mostly about my dev learning.
+  email_md5: dd54ed70b5c362d24941ce614eb7e18c
 
 rss_path: feed.xml
 categories_path: categories.html

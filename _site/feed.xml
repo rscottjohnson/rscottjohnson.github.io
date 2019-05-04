@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>dbyll</title>
-		<description>Stylish Jekyll Theme</description>
+		<title>SJ | Dev</title>
+		<description>Scott Johnson's Blog Site</description>
 		<link>/</link>
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Testing...</title>
+				<description>&lt;p&gt;&lt;strong&gt;This is a test&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Is this thing on…?&lt;/p&gt;
+</description>
+				<pubDate>Sat, 04 May 2019 00:00:00 -0400</pubDate>
+				<link>/general/setup/2019/05/04/test.html</link>
+				<guid isPermaLink="true">/general/setup/2019/05/04/test.html</guid>
+			</item>
 		
 			<item>
 				<title>Hello World!</title>
