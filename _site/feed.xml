@@ -7,77 +7,37 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Testing...</title>
-				<description>&lt;p&gt;&lt;strong&gt;This is a test&lt;/strong&gt;&lt;/p&gt;
+				<title>First Post</title>
+				<description>&lt;h4 id=&quot;getting-a-blog-up-and-running&quot;&gt;Getting a Blog Up and Running&lt;/h4&gt;
+&lt;p&gt;Having &lt;strong&gt;&lt;a href=&quot;https://twitter.com/rscottjohnson/status/1124697196278972416&quot;&gt;thrown my hat into the ring&lt;/a&gt;&lt;/strong&gt; for the #100DaysOfCode recently, I decided that I’d like to begin taking notes down in a blog to capture thoughts on what I’m accomplishing and learning along the way.&lt;/p&gt;
 
-&lt;p&gt;Is this thing on…?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I thought this would be the easy part.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Wanting to roll my own blog, I started to research options, and being a GitHub fan I liked the idea of utilizing GitHub Pages.  This soon introduced me to the use of &lt;strong&gt;&lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;&lt;/strong&gt; for powering up your GitHub Pages page into something special through the use of markdown (which I already enjoy using).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Done.  Solution.  Right?  Well…&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I soon found myself in Ruby Gems &lt;em&gt;heck&lt;/em&gt;, and fighting with Jekyll’s &lt;code class=&quot;highlighter-rouge&quot;&gt;bundler&lt;/code&gt; commands.  For one reason or another, it just wasn’t coming together.  I backed up, punted, and deleted all the files from my repository.  I knew I wanted to use the &lt;strong&gt;&lt;a href=&quot;https://github.com/dbtek/dbyll&quot;&gt;dbyll theme&lt;/a&gt;&lt;/strong&gt;, so I downloaded the files, put them in my already established local GitHub repo, and ran &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; to start a local view of the file.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hallelujah moment&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;From here it was just a matter of making any changes to tailor it to what I wanted, and going through the normal add, commit, and push to GitHub.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git add .&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m &quot;Updated blah blah blah&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a lot of changes yet to make to the structure, design, etc. of the blog, but it works and that feels like a successful step 1.&lt;/p&gt;
+
+&lt;p&gt;As far as today’s work on #100DaysOfCode, I worked up through &lt;strong&gt;&lt;a href=&quot;https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-equality-operator&quot;&gt;Comparison with the Strict Equality Operator&lt;/a&gt;&lt;/strong&gt; on &lt;strong&gt;&lt;a href=&quot;https://www.freecodecamp.org&quot;&gt;freeCodeCamp&lt;/a&gt;&lt;/strong&gt;.  Making solid progress in the Basic Javascript section.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;May the Fourth be with you…&lt;/em&gt;&lt;/p&gt;
 </description>
 				<pubDate>Sat, 04 May 2019 00:00:00 -0400</pubDate>
-				<link>/general/setup/2019/05/04/test.html</link>
-				<guid isPermaLink="true">/general/setup/2019/05/04/test.html</guid>
-			</item>
-		
-			<item>
-				<title>Hello World!</title>
-				<description>&lt;p&gt;&lt;strong&gt;dbyll&lt;/strong&gt; is minimalist, stylish theme for jekyll. Supports gravatar, account links (github, twitter, e-mail, pinterest, résume file) and a bio.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;dbyll&lt;/strong&gt; is brought to you by &lt;strong&gt;&lt;a href=&quot;http://ismaildemirbilek.com&quot;&gt;dbtek&lt;/a&gt;&lt;/strong&gt;. Open sourced under &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-
-&lt;h3 id=&quot;dbyll-is-on-github&quot;&gt;dbyll is on GitHub&lt;/h3&gt;
-
-&lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;https://github.com/dbtek/dbyll&quot;&gt;Grab your copy now!&lt;/a&gt;&lt;/p&gt;
-</description>
-				<pubDate>Fri, 15 Nov 2013 00:00:00 -0500</pubDate>
-				<link>/general/setup/demo/2013/11/15/hello-world.html</link>
-				<guid isPermaLink="true">/general/setup/demo/2013/11/15/hello-world.html</guid>
-			</item>
-		
-			<item>
-				<title>Configuration</title>
-				<description>&lt;p&gt;In your config file change these settings&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dbyll&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  
-  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;yourname&lt;/span&gt;  
-  &lt;span class=&quot;na&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;youremail&lt;/span&gt;  
-  &lt;span class=&quot;na&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;na&quot;&gt;twitter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;na&quot;&gt;pinterest&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;na&quot;&gt;linkedin&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;na&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Your stylish,  minimalist theme!&lt;/span&gt;  
-  &lt;span class=&quot;na&quot;&gt;email_md5&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;md5ofemail&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-</description>
-				<pubDate>Fri, 15 Nov 2013 00:00:00 -0500</pubDate>
-				<link>/general/setup/demo/2013/11/15/configuration.html</link>
-				<guid isPermaLink="true">/general/setup/demo/2013/11/15/configuration.html</guid>
-			</item>
-		
-			<item>
-				<title>Sample</title>
-				<description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'foo'&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-</description>
-				<pubDate>Thu, 14 Nov 2013 00:00:00 -0500</pubDate>
-				<link>/general/demo/2013/11/14/sample.html</link>
-				<guid isPermaLink="true">/general/demo/2013/11/14/sample.html</guid>
-			</item>
-		
-			<item>
-				<title>Sample 2</title>
-				<description>&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</description>
-				<pubDate>Thu, 14 Nov 2013 00:00:00 -0500</pubDate>
-				<link>/general/demo/sample/2013/11/14/sample-2.html</link>
-				<guid isPermaLink="true">/general/demo/sample/2013/11/14/sample-2.html</guid>
+				<link>/general/blog/setup/2019/05/04/first-post.html</link>
+				<guid isPermaLink="true">/general/blog/setup/2019/05/04/first-post.html</guid>
 			</item>
 		
 	</channel>
