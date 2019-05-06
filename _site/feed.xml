@@ -7,6 +7,19 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>100DaysOfCode, Day 2</title>
+				<description>&lt;p&gt;Worked up through &lt;strong&gt;&lt;a href=&quot;https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-equality-operator&quot;&gt;Comparison with the Strict Equality Operator&lt;/a&gt;&lt;/strong&gt; on Free Code Camp’s &lt;em&gt;Introducation to JavaScript&lt;/em&gt; curriculum yesterday, which is good progress especially considering I was down for most of the day not feeling that great.  I’m about a day behind in my tweeting for #100DaysOfCode, but I just add a tweet whenever I think about it.&lt;/p&gt;
+
+&lt;p&gt;Today, I downloaded &lt;strong&gt;&lt;a href=&quot;https://affinity.serif.com/en-us/designer/desktop/&quot;&gt;Affinity Designer&lt;/a&gt;&lt;/strong&gt; and began working up some draft logos for a project I’m working on.  Even though I’m learning my way through, I can already tell it’s a great program, and I hope to work through some more tutorials soon.&lt;/p&gt;
+
+&lt;p&gt;Ended the programming day updating the &lt;strong&gt;&lt;a href=&quot;www.tobradio.com&quot;&gt;TobRadio&lt;/a&gt;&lt;/strong&gt; website, simplifying it to one page, and adding the Facebook link.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 05 May 2019 00:00:00 -0400</pubDate>
+				<link>/general/blog/setup/code/2019/05/05/100Days-Day2.html</link>
+				<guid isPermaLink="true">/general/blog/setup/code/2019/05/05/100Days-Day2.html</guid>
+			</item>
+		
+			<item>
 				<title>First Post</title>
 				<description>&lt;h4 id=&quot;getting-a-blog-up-and-running&quot;&gt;Getting a Blog Up and Running&lt;/h4&gt;
 &lt;p&gt;Having &lt;strong&gt;&lt;a href=&quot;https://twitter.com/rscottjohnson/status/1124697196278972416&quot;&gt;thrown my hat into the ring&lt;/a&gt;&lt;/strong&gt; for the #100DaysOfCode recently, I decided that I’d like to begin taking notes down in a blog to capture thoughts on what I’m accomplishing and learning along the way.&lt;/p&gt;
