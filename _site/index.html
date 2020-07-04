@@ -99,7 +99,7 @@
 
 
 <div id="bio" class="text-center">
-	Posts, notes, and thoughts -- mostly about my dev learning.
+	Aspiring Software Engineer. Current ECU MSSE.
 </div>
 
 
@@ -185,28 +185,11 @@
 
   <div>
     
+    
     <p>I decided I wanted to update the styling, etc. of this blog just as a way to continue learning about another tool (in this case Jekyll), and because I was bored.  However, it seems like every time I go down this path I end up running into some kind of Ruby gems craziness that sends me down a Stackoverflow rabbit hole.</p>
 
-<p><em>This attempt would not disappoint.</em></p>
 
-<h3 id="pre-emptive-tactics">Pre-emptive tactics</h3>
-<p>I thought before I started running Jekyll commands again I would see if simply updating the GitHub repo’s <code class="highlighter-rouge">style.css</code> file might do the trick.  After all, this is a GitHub pages site that I’ve whipped up, so maybe it works like that, right?  <em>Wrong.</em>  Changing this file had absolutely no effect, but it was worth a try.</p>
-
-<h3 id="bundler-of-joy">Bundler of joy</h3>
-<p>I knew I wanted to get a local version running so that when changes were made I could see them reflected locally, and then I could just push them to the repo as usual.  So, I tried <code class="highlighter-rouge">bundle exec jekyll serve</code> and promptly received a cryptic error about an <em>ssl library not loaded</em> and to use <em>bundle install</em> to install the missing stuff.  Using <code class="highlighter-rouge">bundle install</code> gave me the nice error of <code class="highlighter-rouge">jekyll: command not found</code>.  Wut?</p>
-
-<h3 id="to-stackoverflow-we-go">To Stackoverflow we go</h3>
-<p>Admittedly, looking back I don’t know the order of events now, but it was some combination of the discussions <a href="https://stackoverflow.com/questions/19168842/library-not-loaded-opt-local-lib-libssl-1-0-0-dylib-loaderror">here</a> and <a href="https://stackoverflow.com/questions/8146249/jekyll-command-not-found">here</a> that ultimately led me to trying to manage my ruby versions with <a href="https://pragmaticstudio.com/blog/2010/9/23/install-rails-ruby-mac">rvm</a>.  Note that this didn’t entirely work as the part where the walk through explains the Rails install errored out for me once more (it directs you to read the install logs, which are not helpful).</p>
-
-<p>I suspect that more than likely it was the suggestion <a href="https://stackoverflow.com/questions/59350892/installing-ruby-2-1-2-cannot-load-such-file-openssl-loaderror">here</a> of switching the openssl version that may have gotten me moving forward again, but honestly (frustratingly) I’m not sure.</p>
-
-<p>Back at the command line, <code class="highlighter-rouge">bundle install</code> was now successful, but <code class="highlighter-rouge">bundle exec jekyll serve</code> was not.  I then followed the discussion and <a href="https://stackoverflow.com/questions/8146249/jekyll-command-not-found">here</a> and tried <code class="highlighter-rouge">gem install -n /usr/local/bin jekyll</code>.  This successfully fetched and installed a series of gems for me, and <code class="highlighter-rouge">bundle exec jekyll serve</code> is now once again working.</p>
-
-<h3 id="it-now-justworks">It now just…works</h3>
-<p>I’m capturing this here as a way to remind me of what this round of working with Ruby / Jekyll was like as it seems that every time I revisit this approach I go through some variation of this experience.  When it works, it seems great.  When it doesn’t, it’s very frustrating.</p>
-
-<p><em>Sidenote: I’m still not completely happy with the design…</em></p>
-
+    
     
   </div>
 
@@ -229,20 +212,11 @@
 
   <div>
     
+    
     <p>A few weeks ago I decided to pull my Dell XPS M1330 down off of a shelf (where it had been sitting for years) and see if it might be worth giving it some TLC.  My oldest daughter, somehow now in high school, has been taking classes specifically working with Microsoft Office (and mainly Word and PowerPoint).  As we’re mostly an iHouse, and my kids themselves have gotten very comfortable using their Chromebooks, we don’t really have an outlet for her to use Microsoft Office on a native Windows computer.  Upd to this point we had been making use of Office 365 web app functionality, as well as the Microsoft Office copy I have on my MacBook Pro, but we really wanted to align what she’s using at school with what she might want to work on to finish assignments at home.</p>
 
-<p><strong>Enter the Dell XPS M1330 Project.</strong></p>
 
-<p>I started by attempting to boot the laptop up (would this thing even start up?).  It booted up just fine, and a check of Windows Update showed that it had not downloaded / installed any updates since sometime in late 2013.  So, first order of business was letting it sit and run for about 72 hours while it downloaded and applied 6 years of Windows operating system updates. Fun.</p>
-
-<p>Once that was complete, I started trying out a few programs to get an idea of how well things would run.  For someone who’s used to using their relatively quick Chromebook, any lag in response would feel like an eternity.  I decided it was serviceable, and started poking around the hardware to see what might be available in terms of upgrades (and if it made sense to put any money into this thing).  I decided on a new <strong><a href="https://www.crucial.com/usa/en/xps-m1330/CT12722932">hard drive</a></strong> and <strong><a href="https://www.newegg.com/crucial-8gb-200-pin-ddr2-so-dimm/p/N82E16820148232?Description=crucial%20ddr2&amp;cm_re=crucial_ddr2-_-20-148-232-_-Product">memory</a></strong> from Crucial.  Granted, the memory was more than I really wanted to invest, but I had the upgrade bug at this point.  Also, keep in mind I had already replaced the battery that had long since gone bad.</p>
-
-<p>After backing up any files that hadn’t already been backed up a long time ago, uninstalling a ton of programs no longer needed, and generally cleaning things up on the hard drive, I used the <strong><a href="https://www.acronis.com/en-us/promotion/CrucialHD-download/">Acronis True Image</a></strong> utility recommended by Crucial to copy the old hard drive’s image to the new SSD (this probably took about 4 hours).  I then removed the old hard drive and installed the new one and booted up.  My Novabench score improved from a baseline of 334 to 372.  Not too bad, and it felt like there as a noticeable improvement when programs were opened.</p>
-
-<p>Next, I removed the 4GB of 667 speed DDR2 memory and installed the 8GB of 800 speed DDR2 memory to which the laptop promptly hung at the BIOS screen.  Bummer.  I had a feeling that it most likely had something to do not so much with moving to new memory, but rather moving from 4GB to 8GB of total memory.  I removed one of the 4GB modules and powered back up which got me past the BIOS screen to a working desktop.  A quick google search also led me to available BIOS updates available for the M1330.  My BIOS was version A12, and I dowloaded and flashed the BIOS to the latest available: A15.  I then rebooted the laptop to make sure it could progress past the BIOS screen, which it did, so I powered it down, re-installed the second memory module, and booted up to a successful windows desktop (and quicker, by the way).</p>
-
-<p>A second try of Novabench reflected my benchmark score had improved to 414, so another 42 point jump after installing the memory.  I’ll take it!  For now, I’ve installed Office 365 on the laptop and it’s working really well, so overall I’m happy to have breathed some new life into this old Dell XPS M1330.</p>
-
+    
     
   </div>
 
@@ -265,12 +239,11 @@
 
   <div>
     
+    
     <p>Worked up through <strong><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-equality-operator">Comparison with the Strict Equality Operator</a></strong> on Free Code Camp’s <em>Introducation to JavaScript</em> curriculum yesterday, which is good progress especially considering I was down for most of the day not feeling that great.  I’m about a day behind in my tweeting for #100DaysOfCode, but I just add a tweet whenever I think about it.</p>
 
-<p>Today, I downloaded <strong><a href="https://affinity.serif.com/en-us/designer/desktop/">Affinity Designer</a></strong> and began working up some draft logos for a project I’m working on.  Even though I’m learning my way through, I can already tell it’s a great program, and I hope to work through some more tutorials soon.</p>
 
-<p>Ended the programming day updating the <strong><a href="www.tobradio.com">TobRadio</a></strong> website, simplifying it to one page, and adding the Facebook link.</p>
-
+    
     
   </div>
 
@@ -293,33 +266,12 @@
 
   <div>
     
+    
     <h4 id="getting-a-blog-up-and-running">Getting a Blog Up and Running</h4>
 <p>Having <strong><a href="https://twitter.com/rscottjohnson/status/1124697196278972416">thrown my hat into the ring</a></strong> for the #100DaysOfCode recently, I decided that I’d like to begin taking notes down in a blog to capture thoughts on what I’m accomplishing and learning along the way.</p>
 
-<p><em>I thought this would be the easy part.</em></p>
 
-<p>Wanting to roll my own blog, I started to research options, and being a GitHub fan I liked the idea of utilizing GitHub Pages.  This soon introduced me to the use of <strong><a href="https://jekyllrb.com">Jekyll</a></strong> for powering up your GitHub Pages page into something special through the use of markdown (which I already enjoy using).</p>
-
-<p><em>Done.  Solution.  Right?  Well…</em></p>
-
-<p>I soon found myself in Ruby Gems <em>heck</em>, and fighting with Jekyll’s <code class="highlighter-rouge">bundler</code> commands.  For one reason or another, it just wasn’t coming together.  I backed up, punted, and deleted all the files from my repository.  I knew I wanted to use the <strong><a href="https://github.com/dbtek/dbyll">dbyll theme</a></strong>, so I downloaded the files, put them in my already established local GitHub repo, and ran <code class="highlighter-rouge">bundle exec jekyll serve</code> to start a local view of the file.</p>
-
-<p><em>Hallelujah moment</em></p>
-
-<p>From here it was just a matter of making any changes to tailor it to what I wanted, and going through the normal add, commit, and push to GitHub.</p>
-
-<p><code class="highlighter-rouge">git add .</code></p>
-
-<p><code class="highlighter-rouge">git commit -m "Updated blah blah blah"</code></p>
-
-<p><code class="highlighter-rouge">git push origin master</code></p>
-
-<p>There are a lot of changes yet to make to the structure, design, etc. of the blog, but it works and that feels like a successful step 1.</p>
-
-<p>As far as today’s work on #100DaysOfCode, I worked up through <strong><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-equality-operator">Comparison with the Strict Equality Operator</a></strong> on <strong><a href="https://www.freecodecamp.org">freeCodeCamp</a></strong>.  Making solid progress in the Basic Javascript section.</p>
-
-<p><em>May the Fourth be with you…</em></p>
-
+    
     
   </div>
 
@@ -349,7 +301,7 @@
 
 
 
-
+	
 		<footer>
 			<hr/>
 			<p>

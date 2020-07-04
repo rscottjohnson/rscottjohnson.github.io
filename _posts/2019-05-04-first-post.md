@@ -3,7 +3,7 @@ layout: post
 title: First Post
 categories: [general, blog, setup]
 tags: [jekyll, github, ruby, blog]
-fullview: true
+fullview: false
 comments: true
 ---
 
