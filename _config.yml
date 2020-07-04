@@ -14,16 +14,18 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: "home | welcome"
+      title: "Scott Johnson"
 
-description: Scott Johnson's Blog Site
+description: Scott's Blog
 author:
   name: Scott Johnson
-  email: sjohnson.wvu@gmail.com
+  email: rscottjohnson@acm.org
   github: rscottjohnson
   twitter: rscottjohnson
+  website: https://scottjohnson.co
   pinterest: 
   linkedin: rscottjohnson2
+  podcast: https://gotyoureerson.com
   bio: Posts, notes, and thoughts -- mostly about my dev learning.
   email_md5: dd54ed70b5c362d24941ce614eb7e18c
 

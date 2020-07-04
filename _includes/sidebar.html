@@ -30,6 +30,14 @@
 			</a>
 		</li>
 		{% endif %}
+		<!-- Added -->
+		{% if site.author.website %}
+		<li>
+			<a class="btn btn-default btn-sm" href="{{ site.author.website }}">
+				<i class="fa fa-info fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
 		{% if site.author.email %}
 		<li>
 			<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
@@ -50,6 +58,13 @@
 		<li>
 			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}">
 				<i class="fa fa-linkedin fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
+		{% if site.author.podcast %}
+		<li>
+			<a class="btn btn-default btn-sm" href="{{ site.author.podcast }}">
+				<i class="fa fa-microphone fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
