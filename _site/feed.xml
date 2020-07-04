@@ -7,6 +7,33 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Blog update, Jekyll, general Ruby heck</title>
+				<description>&lt;p&gt;I decided I wanted to update the styling, etc. of this blog just as a way to continue learning about another tool (in this case Jekyll), and because I was bored.  However, it seems like every time I go down this path I end up running into some kind of Ruby gems craziness that sends me down a Stackoverflow rabbit hole.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This attempt would not disappoint.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pre-emptive-tactics&quot;&gt;Pre-emptive tactics&lt;/h3&gt;
+&lt;p&gt;I thought before I started running Jekyll commands again I would see if simply updating the GitHub repo’s &lt;code class=&quot;highlighter-rouge&quot;&gt;style.css&lt;/code&gt; file might do the trick.  After all, this is a GitHub pages site that I’ve whipped up, so maybe it works like that, right?  &lt;em&gt;Wrong.&lt;/em&gt;  Changing this file had absolutely no effect, but it was worth a try.&lt;/p&gt;
+
+&lt;h3 id=&quot;bundler-of-joy&quot;&gt;Bundler of joy&lt;/h3&gt;
+&lt;p&gt;I knew I wanted to get a local version running so that when changes were made I could see them reflected locally, and then I could just push them to the repo as usual.  So, I tried &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; and promptly received a cryptic error about an &lt;em&gt;ssl library not loaded&lt;/em&gt; and to use &lt;em&gt;bundle install&lt;/em&gt; to install the missing stuff.  Using &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; gave me the nice error of &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll: command not found&lt;/code&gt;.  Wut?&lt;/p&gt;
+
+&lt;h3 id=&quot;to-stackoverflow-we-go&quot;&gt;To Stackoverflow we go&lt;/h3&gt;
+&lt;p&gt;Admittedly, looking back I don’t know the order of events now, but it was some combination of the discussions &lt;a href=&quot;https://stackoverflow.com/questions/19168842/library-not-loaded-opt-local-lib-libssl-1-0-0-dylib-loaderror&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://stackoverflow.com/questions/8146249/jekyll-command-not-found&quot;&gt;here&lt;/a&gt; that ultimately led me to trying to manage my ruby versions with &lt;a href=&quot;https://pragmaticstudio.com/blog/2010/9/23/install-rails-ruby-mac&quot;&gt;rvm&lt;/a&gt;.  Note that this didn’t entirely work as the part where the walk through explains the Rails install errored out for me once more (it directs you to read the install logs, which are not helpful).&lt;/p&gt;
+
+&lt;p&gt;I suspect that more than likely it was the suggestion &lt;a href=&quot;https://stackoverflow.com/questions/59350892/installing-ruby-2-1-2-cannot-load-such-file-openssl-loaderror&quot;&gt;here&lt;/a&gt; of switching the openssl version that may have gotten me moving forward again, but honestly (frustratingly) I’m not sure.&lt;/p&gt;
+
+&lt;p&gt;Back at the command line, &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; was now successful, but &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; was not.  I then followed the discussion and &lt;a href=&quot;https://stackoverflow.com/questions/8146249/jekyll-command-not-found&quot;&gt;here&lt;/a&gt; and tried &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install -n /usr/local/bin jekyll&lt;/code&gt;.  This successfully fetched and installed a series of gems for me, and &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; is now once again working.&lt;/p&gt;
+
+&lt;h3 id=&quot;it-now-justworks&quot;&gt;It now just…works&lt;/h3&gt;
+&lt;p&gt;I’m capturing this here as a way to remind me of what this round of working with Ruby / Jekyll was like as it seems that every time I revisit this approach I go through some variation of this experience.  When it works, it seems great.  When it doesn’t, it’s very frustrating.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 03 Jul 2020 00:00:00 -0400</pubDate>
+				<link>/general/blog/2020/07/03/post.html</link>
+				<guid isPermaLink="true">/general/blog/2020/07/03/post.html</guid>
+			</item>
+		
+			<item>
 				<title>Dell XPS M1330 - Upgrade Complete!</title>
 				<description>&lt;p&gt;A few weeks ago I decided to pull my Dell XPS M1330 down off of a shelf (where it had been sitting for years) and see if it might be worth giving it some TLC.  My oldest daughter, somehow now in high school, has been taking classes specifically working with Microsoft Office (and mainly Word and PowerPoint).  As we’re mostly an iHouse, and my kids themselves have gotten very comfortable using their Chromebooks, we don’t really have an outlet for her to use Microsoft Office on a native Windows computer.  Upd to this point we had been making use of Office 365 web app functionality, as well as the Microsoft Office copy I have on my MacBook Pro, but we really wanted to align what she’s using at school with what she might want to work on to finish assignments at home.&lt;/p&gt;
 

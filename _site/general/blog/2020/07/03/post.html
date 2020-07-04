@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>100DaysOfCode, Day 2</title>
+	<title>Blog update, Jekyll, general Ruby heck</title>
 	
 	<meta name="author" content="Scott Johnson">
 
@@ -149,7 +149,7 @@
 
 	<div class="col-sm-9 col-sm-offset-3">
 		<div class="page-header">
-  <h1>100DaysOfCode, Day 2 </h1>
+  <h1>Blog update, Jekyll, general Ruby heck </h1>
 </div>
 	
 <article>
@@ -157,17 +157,31 @@
 	<div class="col-sm-10">
 	 <span class="post-date">
 	   
-	   May 
-	   5th,
-	   
-	   2019
+	   July 
+	   3rd,
+	     
+	   2020
 	 </span>
 	  <div class="article_body">
-	  <p>Worked up through <strong><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-equality-operator">Comparison with the Strict Equality Operator</a></strong> on Free Code Camp’s <em>Introducation to JavaScript</em> curriculum yesterday, which is good progress especially considering I was down for most of the day not feeling that great.  I’m about a day behind in my tweeting for #100DaysOfCode, but I just add a tweet whenever I think about it.</p>
+	  <p>I decided I wanted to update the styling, etc. of this blog just as a way to continue learning about another tool (in this case Jekyll), and because I was bored.  However, it seems like every time I go down this path I end up running into some kind of Ruby gems craziness that sends me down a Stackoverflow rabbit hole.</p>
 
-<p>Today, I downloaded <strong><a href="https://affinity.serif.com/en-us/designer/desktop/">Affinity Designer</a></strong> and began working up some draft logos for a project I’m working on.  Even though I’m learning my way through, I can already tell it’s a great program, and I hope to work through some more tutorials soon.</p>
+<p><em>This attempt would not disappoint.</em></p>
 
-<p>Ended the programming day updating the <strong><a href="www.tobradio.com">TobRadio</a></strong> website, simplifying it to one page, and adding the Facebook link.</p>
+<h3 id="pre-emptive-tactics">Pre-emptive tactics</h3>
+<p>I thought before I started running Jekyll commands again I would see if simply updating the GitHub repo’s <code class="highlighter-rouge">style.css</code> file might do the trick.  After all, this is a GitHub pages site that I’ve whipped up, so maybe it works like that, right?  <em>Wrong.</em>  Changing this file had absolutely no effect, but it was worth a try.</p>
+
+<h3 id="bundler-of-joy">Bundler of joy</h3>
+<p>I knew I wanted to get a local version running so that when changes were made I could see them reflected locally, and then I could just push them to the repo as usual.  So, I tried <code class="highlighter-rouge">bundle exec jekyll serve</code> and promptly received a cryptic error about an <em>ssl library not loaded</em> and to use <em>bundle install</em> to install the missing stuff.  Using <code class="highlighter-rouge">bundle install</code> gave me the nice error of <code class="highlighter-rouge">jekyll: command not found</code>.  Wut?</p>
+
+<h3 id="to-stackoverflow-we-go">To Stackoverflow we go</h3>
+<p>Admittedly, looking back I don’t know the order of events now, but it was some combination of the discussions <a href="https://stackoverflow.com/questions/19168842/library-not-loaded-opt-local-lib-libssl-1-0-0-dylib-loaderror">here</a> and <a href="https://stackoverflow.com/questions/8146249/jekyll-command-not-found">here</a> that ultimately led me to trying to manage my ruby versions with <a href="https://pragmaticstudio.com/blog/2010/9/23/install-rails-ruby-mac">rvm</a>.  Note that this didn’t entirely work as the part where the walk through explains the Rails install errored out for me once more (it directs you to read the install logs, which are not helpful).</p>
+
+<p>I suspect that more than likely it was the suggestion <a href="https://stackoverflow.com/questions/59350892/installing-ruby-2-1-2-cannot-load-such-file-openssl-loaderror">here</a> of switching the openssl version that may have gotten me moving forward again, but honestly (frustratingly) I’m not sure.</p>
+
+<p>Back at the command line, <code class="highlighter-rouge">bundle install</code> was now successful, but <code class="highlighter-rouge">bundle exec jekyll serve</code> was not.  I then followed the discussion and <a href="https://stackoverflow.com/questions/8146249/jekyll-command-not-found">here</a> and tried <code class="highlighter-rouge">gem install -n /usr/local/bin jekyll</code>.  This successfully fetched and installed a series of gems for me, and <code class="highlighter-rouge">bundle exec jekyll serve</code> is now once again working.</p>
+
+<h3 id="it-now-justworks">It now just…works</h3>
+<p>I’m capturing this here as a way to remind me of what this round of working with Ruby / Jekyll was like as it seems that every time I revisit this approach I go through some variation of this experience.  When it works, it seems great.  When it doesn’t, it’s very frustrating.</p>
 
 	  </div>
 
@@ -184,16 +198,6 @@
 			 
 				<li><a href="/categories.html#blog-ref">
 					blog <span>(4)</span>
-					,
-				</a></li>
-			 
-				<li><a href="/categories.html#setup-ref">
-					setup <span>(2)</span>
-					,
-				</a></li>
-			 
-				<li><a href="/categories.html#code-ref">
-					code <span>(1)</span>
 					
 				</a></li>
 			
@@ -206,34 +210,6 @@
 		  <li><i class="fa fa-tags"></i></li>
 		  
 		  
-			 
-				<li>
-					<a href="/tags.html#100DaysOfCode-ref">
-					100DaysOfCode <span>(1)</span>
-					,
-					</a>
-				</li>
-			 
-				<li>
-					<a href="/tags.html#AffinityDesigner-ref">
-					AffinityDesigner <span>(1)</span>
-					,
-					</a>
-				</li>
-			 
-				<li>
-					<a href="/tags.html#TobRadio-ref">
-					TobRadio <span>(1)</span>
-					,
-					</a>
-				</li>
-			 
-				<li>
-					<a href="/tags.html#FreeCodeCamp-ref">
-					FreeCodeCamp <span>(1)</span>
-					,
-					</a>
-				</li>
 			 
 				<li>
 					<a href="/tags.html#blog-ref">
@@ -252,7 +228,7 @@
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">Share Post</h4>
-        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=100DaysOfCode, Day 2&via=rscottjohnson"
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Blog update, Jekyll, general Ruby heck&via=rscottjohnson"
            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <i class="fa fa-twitter fa-lg"></i>
           Twitter
@@ -280,10 +256,10 @@
 
 		<ul class="pager">
 		  
-		  <li class="previous"><a href="/general/blog/setup/2019/05/04/first-post.html" title="First Post">&larr; Previous</a></li>
+		  <li class="previous"><a href="/general/blog/2019/05/30/post.html" title="Dell XPS M1330 - Upgrade Complete!">&larr; Previous</a></li>
 		  
 		  
-		  <li class="next"><a href="/general/blog/2019/05/30/post.html" title="Dell XPS M1330 - Upgrade Complete!">Next &rarr;</a></li>
+			<li class="next disabled"><a>Next &rarr;</a>
 		  
 		</ul>
 
