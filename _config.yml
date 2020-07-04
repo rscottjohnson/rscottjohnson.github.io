@@ -6,6 +6,11 @@ exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
 disqus: sjwvuie
+# Added for disqus
+# ----
+layout: default
+comments: true
+# ----
 google_analytics: sjwvuie
 title: SJ | Dev
 
@@ -26,7 +31,7 @@ author:
   pinterest: 
   linkedin: rscottjohnson2
   podcast: https://gotyoureerson.com
-  bio: Posts, notes, and thoughts -- mostly about my dev learning.
+  bio: Aspiring Software Engineer. Current ECU MSSE.
   email_md5: dd54ed70b5c362d24941ce614eb7e18c
 
 rss_path: feed.xml
